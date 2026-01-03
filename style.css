@@ -5,84 +5,44 @@
 }
 
 body {
-  background-image: linear-gradient(rgb(226, 226, 98), rgb(212, 157, 53));
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
   height: 100vh;
-  width: 100vw;
-  position: relative;
-  overflow: hidden;
-  animation: bg 10s ease-in-out infinite;
-}
-@keyframes bg {
-  0% {
-    background-image: linear-gradient(rgb(226, 226, 98), rgb(212, 157, 53));
-  }
-  50% {
-    background-image: linear-gradient(rgb(252, 245, 152), rgb(247, 247, 64));
-  }
-  75% {
-    background-image: linear-gradient(rgb(253, 205, 132), rgb(204, 141, 4));
-  }
-  100% {
-    background-image: linear-gradient(rgb(252, 145, 119), rgb(240, 57, 57));
-  }
+  background-color: rgb(190, 171, 151);
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: rgb(255, 255, 137) 0 0 20px 20px;
-  background-image: linear-gradient(
-    45deg,
-    rgb(252, 226, 111),
-    rgb(250, 250, 41)
-  );
-  position: absolute;
-  left: -4%;
-  bottom: -6%;
-  animation: sunAnimate 10s ease-in-out infinite;
+.container {
+  border-radius: 4px;
+  width: 308px;
+  background-color: rgb(22, 102, 102);
+  height: 400px;
 }
 
-@keyframes sunAnimate {
-  0% {
-    box-shadow: rgb(255, 255, 137) 0 0 20px 20px;
-    background-image: linear-gradient(
-      45deg,
-      rgb(252, 226, 111),
-      rgb(250, 250, 41)
-    );
-    left: -4%;
-    bottom: -6%;
-  }
-  50% {
-    box-shadow: rgb(253, 253, 171) 0 0 30px 30px;
-    background-image: linear-gradient(
-      45deg,
-      rgb(247, 250, 102),
-      rgb(247, 247, 64)
-    );
-    left: 50%;
-    bottom: 60%;
-  }
-  75% {
-    box-shadow: rgb(255, 219, 18) 0 0 20px 20px;
-    background-image: linear-gradient(
-      45deg,
-      rgb(248, 163, 35),
-      rgb(204, 141, 4)
-    );
-    left: 75%;
-    bottom: 40%;
-  }
-  100% {
-    box-shadow: rgb(231, 124, 2) 0 0 8px 8px;
-    background-image: linear-gradient(
-      45deg,
-      rgb(250, 96, 58),
-      rgb(241, 22, 22)
-    );
-    left: 95%;
-    bottom: -6%;
-  }
+.btn {
+  width: 70px;
+  height: 50px;
+  margin: 2px;
+  padding: 30px;
+  color: white;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.num {
+  background-color: black;
+}
+
+.opt {
+  background-color: rgb(143, 143, 61);
+}
+
+.other {
+  background-color: red;
 }

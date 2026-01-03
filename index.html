@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="box"></div>
+    <h1>Calculator App</h1>
+    <div class="container">
+      <input type="text" id="display" />
+      <button onclick="clearAll()" class="btn other">AC</button>
+      <button onclick="del()" class="btn other">Del</button
+      ><button class="btn opt">%</button>
+      <button onclick="displayValue('/')" class="btn opt">÷</button>
+      <button onclick="displayValue('7')" class="btn num">7</button>
+      <button onclick="displayValue('8')" class="btn num">8</button>
+      <button onclick="displayValue('9')" class="btn num">9</button>
+      <button onclick="displayValue('*')" class="btn opt">*</button>
+      <button onclick="displayValue('4')" class="btn num">4</button>
+      <button onclick="displayValue('5')" class="btn num">5</button>
+      <button onclick="displayValue('6')" class="btn num">6</button>
+      <button onclick="displayValue('+')" class="btn opt">+</button>
+      <button onclick="displayValue('1')" class="btn num">1</button>
+      <button onclick="displayValue('2')" class="btn num">2</button>
+      <button onclick="displayValue('3')" class="btn num">3</button>
+      <button onclick="displayValue('-')" class="btn opt">-</button>
+      <button onclick="displayValue('0')" class="btn num">0</button>
+      <button onclick="displayValue('.')" class="btn num">.</button>
+      <button onclick="displayValue('00')" class="btn num">00</button>
+      <button onclick="calculator('=')" class="btn opt">=</button>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
