@@ -7,6 +7,55 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="box"></div>
+    <div class="container">
+      <form
+      action=""
+      class="search-box"
+      onsubmit="weatherDataGet(); return false"
+      >
+      <input type="text" placeholder="Enter City..." id="input" />
+      <button class="search-btn">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </form>
+      <img src="./weather-icon.png" alt="" class="weather-icon" />
+      <div class="weather">
+        <h1 id="temp">22</h1>
+        <h1 id="city">Hyderabad</h1>
+      </div>
+      <div class="others">
+        <div class="other-1">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4148/4148460.png"
+            alt=""
+          />
+          <h2 class="other-text">Humidity</h2>
+          <div id="humidity">33</div>
+        </div>
+        <div class="other-2">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3741/3741046.png"
+            alt=""
+          />
+          <h2 class="other-text">Wind</h2>
+          <div id="wind">33</div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
