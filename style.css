@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(102, 0, 204);
+  background-color: rgb(118, 108, 145);
 }
 .container {
   background:linear-gradient(150deg,rgba(174, 225, 245, 1) 0%, rgba(63, 121, 166, 1) 44%, rgba(35, 77, 122, 1) 88%);
