@@ -3,9 +3,11 @@ const city = document.getElementById("city");
 const humidity = document.getElementById("humidity");
 const wind = document.getElementById("wind");
 const input = document.getElementById("input");
-// const e = document.getElementById("error");
+const form = document.getElementById("form");
 
-async function weatherDataGet() {
+form.addEventListener("submit", weatherDataGet);
+async function weatherDataGet(event) {
+  event.preventDefault();
   try {
     const cityName = input.value;
     const resp = await fetch(

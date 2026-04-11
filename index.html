@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>weather-app</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <h1 class="h">Weather App</h1>
     <div class="container">
       <form
-      action=""
       class="search-box"
-      onsubmit="weatherDataGet(); return false"
+      id="form"
       >
       <input type="text" placeholder="Enter City..." id="input" />
       <button class="search-btn">
@@ -32,7 +32,7 @@
           </svg>
         </button>
       </form>
-      <img src="https://cdn-icons-png.flaticon.com/512/10127/10127236.png" alt="" class="weather-icon" />
+      <img src="./weather-icon.png" alt="" class="weather-icon" />
       <div class="weather">
         <h1 id="temp">22</h1>
         <h1 id="city">Hyderabad</h1>
@@ -59,4 +59,3 @@
     <script src="./app.js"></script>
   </body>
 </html>
-
